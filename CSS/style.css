@@ -20,3 +20,30 @@ body {
 .titulo span {
   font-size: 2rem;
 }
+
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.nav-bg {
+  background-color: var(--secundario);
+}
+
+.navegacion-principal {
+  display: flex; /*solo puedes colocar y distribuir los elemento en una sola direccion fila o columna*/
+  justify-content: space-between; /*distribucion de nuestra barra de navegacion*/
+}
+
+.navegacion-principal a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  /*para lograr cambiar el color al posicionarnos*/
+  background-color: var(--primario);
+  color: var(--negro);
+}
