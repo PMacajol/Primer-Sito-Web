@@ -22,7 +22,7 @@ body {
 }
 
 .contenedor {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -32,7 +32,16 @@ body {
 
 .navegacion-principal {
   display: flex; /*solo puedes colocar y distribuir los elemento en una sola direccion fila o columna*/
+  flex-direction: column;
   justify-content: space-between; /*distribucion de nuestra barra de navegacion*/
+}
+
+@media (min-width: 768px) {
+  /*Ajuste automatico de nuestra barra de navegacion para distintos dispositivos*/
+  /*480 telefono, 768 tablet*/
+  .navegacion-principal {
+    flex-direction: row;
+  }
 }
 
 .navegacion-principal a {
